@@ -1,0 +1,191 @@
+/* Importação da Fonte do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+/* Reset de Estilos Padrão e Estilos Globais */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+    background-color: #02030a;
+}
+
+/* Layout da Página e Container Principal */
+.container {
+    max-width: 1200px;
+    padding: 20px; /* Adicionado preenchimento para desktop */
+}
+
+/* Seção Principal da Página */
+.section {
+    background: linear-gradient(to bottom, #060210, #02030a);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+/* Estilos do Texto com Gradiente */
+.bg-gradient {
+    background: linear-gradient(to right, #00c7bd, #00e279);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: stretch;
+    padding: 5px; /* Adicionado espaçamento interno ao formulário */
+}
+
+/* Container do Formulário */
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilos do Input do Formulário */
+.form-input {
+    width: 70%;
+    height: 43px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #e2e2e2;
+    background-color: #252323;
+    font-size: 1rem;
+    font-weight: 300;
+    outline: none;
+}
+
+/* Estilos do Botão de Envio do Formulário */
+.submit-button {
+    height: 63px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    background-color: #00c7bd;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.submit-button:hover {
+    background-color: #00e279;
+}
+
+/* Adicionado ícone e texto oculto ao botão de envio */
+.submit-button .svg-icon {
+    margin-right: 5px;
+}
+
+.submit-button span {
+    display: none;
+}
+
+/* Estilos do Link dos Termos e Condições */
+.terms-link {
+    text-decoration: underline;
+    color: #00c7bd;
+    font-size: 0.9rem;
+    cursor: pointer; /* Adicionado cursor pointer */
+    transition: color 0.3s ease; /* Adicionada transição suave de cor */
+}
+
+.terms-link:hover {
+    color: #00e279;
+}
+
+/* Estilos dos Parágrafos */
+.p-email-1,
+.p-email-2 {
+    font-size: 1rem;
+    color: #e2e2e2;
+    font-weight: 300;
+    margin-bottom: 10px; /* Adicionado espaçamento entre os parágrafos */
+}
+
+/* Adicione estas regras no seu CSS */
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+    .bg-gradient {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    .form-container {
+        max-width: 100%;
+    }
+
+    .form-input,
+    .submit-button {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 10px; /* Adicionado espaçamento entre os elementos */
+    }
+}
+/* Estilos para a Seção de Texto e Formulário */
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-section {
+    flex: 1;
+    text-align: center;
+    /* Centralizar o texto */
+}
+
+/* Estilos para a Seção de Imagem */
+.image-section {
+    max-width: 40%;
+    /* Ajuste conforme necessário */
+    margin-left: 5%;
+    /* Adiciona espaçamento entre as seções */
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    /* Adiciona curvas nas bordas */
+    box-shadow: 0 4px 8px rgba(201, 196, 196, 0.205);
+    /* Adiciona uma sombra suave */
+}
+
+.responsive-image {
+    width: 100%; /* Ajusta para preencher automaticamente */
+    height: 400px; /* Ajuste a altura conforme necessário */
+    /* ou você pode usar valores específicos como height: 200px; */
+    max-width: 100%; /* Ajuste a largura máxima conforme necessário */
+    object-fit: cover; /* Mantém a proporção da imagem e corta o excesso */
+}
+
+/* Adicione essas regras no seu CSS para o modo responsivo */
+@media only screen and (max-width: 600px) {
+    .responsive-image {
+        height: 30vh; /* Ajuste a altura responsiva conforme necessário */
+    }
+}
